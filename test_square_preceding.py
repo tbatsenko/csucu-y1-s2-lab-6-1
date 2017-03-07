@@ -4,7 +4,7 @@ import unittest
 
 class TestSquareProcessing(unittest.TestCase):
 
-    def test_is_working(self):
+    def test_case_1(self):
         self.assertEqual(square_preceding([1, 2, 3]), [0, 1, 4])
 
     def test_first_zero(self):
