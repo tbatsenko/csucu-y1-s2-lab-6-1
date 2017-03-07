@@ -12,6 +12,10 @@ def square_preceding(values):
         values[0] = 0
     for i in range(1, len(values)):
         values[i] = temp ** 2
-        temp = values[i]
+        if i != len(values) - 1:
+            temp = values[i+1]
+        else:
+            break
+    return values
 
 square_preceding([1, 2, 3, 4])
